@@ -1,0 +1,118 @@
+/* ==============================================================
+
+Template name : Bootsnav - Multi Purpose Header
+Categorie : Bootstrap Menu in CSS
+Author : adamnurdin01
+Version : v1.0.0
+Created : 02 Juni  2016
+Last update : 02 Juni  2016
+
+============================================================== */
+
+/*
+Color
+=========================== */
+nav.navbar.bootsnav ul.dropdown-menu.megamenu-content .content ul.menu-col li a:hover,
+.side .widget ul.link li a:hover,
+.side .widget ul.link li a:focus,
+.check-list li:before,
+ul.cart-list > li > h6 > a,
+.attr-nav > ul > li > a:hover,
+.attr-nav > ul > li > a:focus,
+nav.navbar-sidebar ul.nav li.dropdown.on > a,
+nav.navbar-sidebar .dropdown .megamenu-content .col-menu.on .title,
+nav.navbar-sidebar ul.nav li.dropdown ul.dropdown-menu li a:hover,
+nav.navbar ul.nav li.dropdown.on > a,
+nav.navbar.navbar-inverse ul.nav li.dropdown.on > a,
+nav.navbar-sidebar ul.nav li.dropdown.on ul.dropdown-menu li.dropdown.on > a,
+nav.navbar .dropdown .megamenu-content .col-menu.on .title,
+nav.navbar ul.nav > li > a:hover,
+nav.navbar ul.nav li.active > a,
+nav.navbar li.dropdown ul.dropdown-menu > li a:hover{
+    color: #c41e3a;
+}
+
+nav.navbar.navbar-transparent ul.nav > li > a:hover,
+nav.navbar.no-background ul.nav > li > a:hover,
+nav.navbar ul.nav li.scroll.active > a,
+nav.navbar.navbar-dark ul.nav li.dropdown ul.dropdown-menu  > li > a:hover,
+nav.navbar ul.nav li.dropdown.on > a,
+nav.navbar-dark ul.nav li.dropdown.on > a{
+    color: #c41e3a !important;
+}
+
+@media(max-width:920px){
+    nav.navbar .dropdown .megamenu-content .col-menu ul > li > a:hover,
+    nav.navbar.navbar-dark .dropdown .megamenu-content .col-menu .title:hover{
+        color: #c41e3a !important;
+    }
+}
+
+/*
+Border
+=========================== */
+ul.cart-list > li.total > .btn{
+    border-color: #c41e3a;
+}
+
+nav.navbar li.dropdown ul.dropdown-menu{
+    border-top-color: #c41e3a !important;
+}
+
+/*
+Background
+=========================== */
+ul.cart-list > li.total > .btn,
+.attr-nav > ul > li > a span.badge,
+nav.navbar .share ul > li > a:hover,
+nav.navbar .share ul > li > a:focus{
+    background-color: #c41e3a;
+}
+
+ul.cart-list > li.total > .btn:hover,
+ul.cart-list > li.total > .btn:focus{
+    background-color: #c41e3a !important;
+}
+
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Botón flotante de WhatsApp */
+.whatsapp-float {
+    position: fixed;
+    bottom: 50px;  /* Posición más arriba, 30px más arriba que el valor original */
+    right: 20px;
+    width: 96px;  /* 60% más grande que el tamaño original de 60px */
+    height: 96px; /* 60% más grande que el tamaño original de 60px */
+    background: radial-gradient(circle, #c41e3a 30%, #c41e3a 90%);
+    border-radius: 50%;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease-in-out;
+    animation: bounce 2s infinite;
+    z-index: 1000;
+}
+
+/* Imagen del icono de WhatsApp */
+.whatsapp-float img {
+    width: 146px;  /* Aumenta el tamaño de la imagen para que se vea más grande y rellene el botón */
+    height: 146px; /* Ajusta la altura proporcionalmente */
+    object-fit: contain;  /* Asegura que la imagen mantenga su proporción */
+}
+
+/* Animación de rebote */
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+}
+
+/* Efecto al pasar el mouse */
+.whatsapp-float:hover {
+    transform: scale(1.1);
+}
